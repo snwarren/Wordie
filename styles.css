@@ -5,31 +5,40 @@
 }
 
 #gameboard {
-    background-color: gray;
-    border: 5px solid darkblue;
+    background-color: #2b2f31;
+    border: 5px solid rgb(157, 157, 173);
     height: 550px;
     width: 550px;
     padding: 5px;
 }
 
-#answer {
-    font-size: 30px;
+.answerBox {
+    display: flex;
+    font-size: 90px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #495054;
 }
 
-.wrong {
-    color: red;
+.letter {
+    display: inline-flex;
+    background-color:#737d81;
+    border: 5px solid #b5c2c7;
+    height: 100px;
+    width: 100px;
+    margin: 10px 5px 15px;
+    align-items: center;
+    justify-content:center;
 }
 
 .right {
-    color: lightgreen;
+    color: #62c066;
 }
 
 .sorta {
-    color: yellow;
+    color: #fdfd9a;
 }
 
-
+/* darkest: #495054, lightest: #e3e8ea*/
 
 /*
 .word-row {
