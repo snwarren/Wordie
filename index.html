@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wordie</title>
     <script src="script.js"></script>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div id="gameboard">
@@ -18,8 +19,13 @@
             required>
         <button id="submit" onclick="checkWord();">Submit</button>
         <br>
-        <p id="guess"></p>
-
+        <p id="answer">
+            <span id="guessLetter0" class="_"></span>
+            <span id="guessLetter1" class="_"></span>
+            <span id="guessLetter2" class="_"></span>
+            <span id="guessLetter3" class="_"></span>
+            <span id="guessLetter4" class="_"></span>
+        </p>
     </div>
 
 

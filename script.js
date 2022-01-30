@@ -14,38 +14,22 @@ console.log(keyWord);
 function checkWord (){
     //User input
     let wordInput = document.getElementById("word").value;
-    //Object for where guess will print
-    let guess = document.getElementById("guess");
 
-    // Create parse variables as arrays
-    let lastGuessParse = [];
-    let lastGuess = [];
-
-
-    //checks if word matches
-    if (wordInput === keyWord){
-        console.log("YAY!")
-    }
-    else {
-        //creates array of input word letters
-        inputParse = wordInput.split("");
-        //compares input and keyword
-        for (let i=0; i<=inputParse.length-1; i++) {
-            //Moves matching letters to new array
-            if (inputParse[i] === keyWordParse[i]){
-                lastGuessParse.push(inputParse[i]);
-
-            }
-            //Adds blank for non-matches
-            else {
-                lastGuessParse.push("_");
-            }
+    //creates array of input word letters
+    inputParse = wordInput.split("");
+    //compares input and keyword
+    for (let i=0; i<inputParse.length; i++) {
+        let guessIndex = "guessLetter" + i;
+        let guessLetter = document.getElementById(guessIndex);
+        //Moves matching letters to new array
+        if (inputParse[i] === keyWordParse[i]){
+            guessLetter.className="right"
         }
-        //Merges parsed new array into string
-        lastGuess = lastGuessParse.join("");
+        else {
+            guessLetter.className="wrong"
+        }
 
-        //Displays on page
-        guess.innerHTML = lastGuess;
+        guessLetter.innerHTML = inputParse[i];
     }
 }
 

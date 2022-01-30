@@ -4,10 +4,21 @@
     box-sizing: border-box;
 }
 
+#answer {
+    font-size: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.wrong {
+    color: red;
+}
+
+.right {
+    color: lightgreen;
+}
 
 
-
-.gameboard {
+/* .gameboard {
     background-color: gray;
     border: 5px solid darkblue;
     height: 550px;
@@ -30,4 +41,4 @@
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 80px;
     text-align: center;
-}
+}*/
