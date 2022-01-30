@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+.gameboard {
+    background-color: gray;
+    border: 5px solid darkblue;
+    height: 550px;
+    width: 550px;
+    padding: 5px;
+}
+
+.word-row {
+    display:flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.letterbox {
+    background-color: lightblue;
+    border: 2px solid white;
+    height: 100px;
+    width: 100px;
+    padding: 10px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 80px;
+    text-align: center;
+}
