@@ -12,24 +12,31 @@ console.log(keyWord);
 
 // Grabs word from form submission
 function checkWord (){
-    //User input
+    //stores user input
     let wordInput = document.getElementById("word").value;
 
     //creates array of input word letters
     inputParse = wordInput.split("");
+
     //compares input and keyword
     for (let i=0; i<inputParse.length; i++) {
         let guessIndex = "guessLetter" + i;
-        let guessLetter = document.getElementById(guessIndex);
-        //Moves matching letters to new array
+        let letter = document.getElementById(guessIndex);
+        //assigns color
+        
         if (inputParse[i] === keyWordParse[i]){
-            guessLetter.className="right"
+            letter.className="right"
         }
         else {
-            guessLetter.className="wrong"
+
+            for (let j=0; j<keyWordParse.length; j++){
+                if (inputParse[i] === keyWordParse[j]) {
+                    letter.className="sorta"
+                }
+            }
         }
 
-        guessLetter.innerHTML = inputParse[i];
+        letter.innerHTML = inputParse[i].toUpperCase();
     }
 }
 

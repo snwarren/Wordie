@@ -4,6 +4,14 @@
     box-sizing: border-box;
 }
 
+#gameboard {
+    background-color: gray;
+    border: 5px solid darkblue;
+    height: 550px;
+    width: 550px;
+    padding: 5px;
+}
+
 #answer {
     font-size: 30px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -17,15 +25,13 @@
     color: lightgreen;
 }
 
-
-/* .gameboard {
-    background-color: gray;
-    border: 5px solid darkblue;
-    height: 550px;
-    width: 550px;
-    padding: 5px;
+.sorta {
+    color: yellow;
 }
 
+
+
+/*
 .word-row {
     display:flex;
     justify-content: space-between;
